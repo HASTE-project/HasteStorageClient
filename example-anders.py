@@ -48,9 +48,10 @@ substream_id = 'B13'  # Group by microscopy well ID.
 client.save(timestamp_cloud_edge,
             (12.34, 56.78), # location on the plate
             substream_id,
-            blob_bytes,
+            bytearray(), # For the MoveToDir driver, its not necessary to specify the bytes here.
             {'image_height_pixels': 300,  # bag of extracted features here
              'image_width_pixels': 300,
-             'number_of_green_pixels': 1234})
+             'number_of_green_pixels': 1234,
+             'original_filename': 'foo.tiff'}) # the MoveToDir driver will read the filename from here, and combine it with the paths above.
 
 client.close()

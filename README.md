@@ -5,6 +5,15 @@
 Smart middleware for working with a variety of storage media with Scientific Computing datasets. 
 Supports Python 2.7 and Python 3.*.
 
+
+This tool was used in in this paper:
+```
+"Rapid development of cloud-native intelligent data pipelines for scientific data streams using the HASTE Toolkit"
+https://www.biorxiv.org/content/10.1101/2020.09.13.274779v1
+```
+To reproduce the results from that paper, deploy and run the application according to the instructions at https://github.com/HASTE-project/k8s-deployments
+
+
 ## Installation
 
 ```
